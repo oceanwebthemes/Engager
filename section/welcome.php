@@ -34,7 +34,7 @@
             			<div class="col-sm-4">
             				<div class="single">			
                                 <div class="icon">
-                                    <i class="<?php echo $welcome_icon[$i];?>"></i>
+                                    <i class="<?php echo esc_attr( $welcome_icon[$i] );?>"></i>
                                 </div>
             					<a href="<?php the_permalink();?>" title="">
             						<h2><?php the_title();?></h2>

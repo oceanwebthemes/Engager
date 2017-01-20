@@ -39,7 +39,7 @@
                                             <?php the_title();?>
                                         </h3>
                                         <?php the_excerpt(); ?>
-                                        <a href="<?php the_permalink();?>" class="btn btn-plain"><?php _e('Read More','engager');?>
+                                        <a href="<?php the_permalink();?>" class="btn btn-plain"><?php esc_attr_e('Read More','engager');?>
                                             <i class="fa fa-angle-double-right"></i>
                                         </a>
                                     </div>

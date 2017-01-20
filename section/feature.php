@@ -78,7 +78,7 @@
                                     <div class="single">
                                         <?php if($feature_icon[$i]):?>
                                             <div class="icon">
-                                                <i class="<?php echo $feature_icon[$i];?>"></i>
+                                                <i class="<?php echo esc_attr($feature_icon[$i]);?>"></i>
                                             </div>
                                         <?php elseif(has_post_thumbnail($post->ID)):?>
                                             <div class="icon">

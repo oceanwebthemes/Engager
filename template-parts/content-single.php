@@ -19,7 +19,7 @@
                     foreach ( $cats as $cat ){
                         $cat_array[] = '<li><a href="'.esc_url( get_category_link( $cat->term_id ) ).'">'.esc_attr($cat->cat_name).'</a></li>';
                     }
-                    echo join( ', ', $cat_array );
+                    echo esc_html(join( ', ', $cat_array ));
                     endif;
         ?>
         <?php if(has_tag()):
@@ -28,7 +28,7 @@
                   foreach ( $tags as $cat ){
                                $tag_array[] = '<li><a href="'.esc_url( get_tag_link( $cat->term_id ) ).'">'.$cat->name.'</a></li>';
                           }
-                         echo join( '', $tag_array );
+                         echo esc_html(join( '', $tag_array ));
               endif;
                 ?>
   </ul>

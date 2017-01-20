@@ -66,7 +66,7 @@
 			<?php endif;?>
 			<div class="col-sm-4">
 				<div class="info fright">
-				<?php echo __('Design by', 'engager'); ?> <a href="http://oceanwebthemes.com">Ocean Web Themes</a>
+				<?php echo esc_attr( __('Design by', 'engager')); ?> <a href="http://oceanwebthemes.com">Ocean Web Themes</a>
 				</div>
 			</div>
 		</div>		

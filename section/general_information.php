@@ -28,7 +28,7 @@
                                 <?php the_title();?>
                             </h2>
                             <h5>
-                                <?php echo get_option('date_format'); ?>
+                                <?php echo esc_attr( get_option('date_format') ); ?>
                             </h5>
                             <?php the_excerpt(); ?>
                         </div>

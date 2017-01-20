@@ -16,7 +16,7 @@
 	<?php if ( have_comments() ) : ?>
   <h2 class="block-title"> <?php
 				printf( esc_attr(_n( '%s Comment', '%s Comments', get_comments_number(), 'engager' )),
-					number_format_i18n( get_comments_number() ), '<span>' . esc_attr(get_the_title()) . '</span>' );
+					number_format_i18n(absint( get_comments_number() ) ), '<span>' . esc_attr(get_the_title()) . '</span>' );
 			?></h2>
 
       

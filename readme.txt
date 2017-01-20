@@ -9,8 +9,8 @@ Engager Theme is a simple, clean, beautifully designed theme.Engager theme is es
 Tags: translation-ready,theme-options, custom-menu, threaded-comments,one-column,two-columns,left-sidebar,right-sidebar,custom-header,featured-images,rtl-language-support,sticky-post
 
 Requires at least: 4.5.2
-Tested up to: 4.6.2
-Stable tag: 1.0.9
+Tested up to: 4.7.1
+Stable tag: 1.1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Engager WordPress Theme, Copyright 2016 oceanwebthemes

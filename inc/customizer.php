@@ -135,7 +135,7 @@ function engager_sanitize_hex_color( $hex_color, $setting ) {
   $hex_color = sanitize_hex_color( $hex_color );
   
   // If $input is a valid hex value, return it; otherwise, return the default.
-  return ( ! null( $hex_color ) ? $hex_color : $setting->default );
+  return ( ! is_null( $hex_color ) ? $hex_color : $setting->default );
 }
 /**
  * HTML sanitization callback example.
