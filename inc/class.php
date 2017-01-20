@@ -39,7 +39,7 @@ class engager_Customize_Dropdown_Taxonomies_Control extends WP_Customize_Control
     ?>
     <label>
       <span class="customize-control-title"><?php echo esc_html( $this->label ); ?></span>
-         <select <?php echo esc_url($this->link()); die(); ?>>
+         <select <?php echo esc_url($this->link()); ?>>
             <?php
               printf(esc_html('<option value="%s" %s>%s</option>', '', selected(esc_attr($this->value()), '', false),__('Select', 'engager') ));
              ?>
