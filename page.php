@@ -45,7 +45,7 @@ get_header(); ?>
 	            }
             ?>
 			
-			<div class="<?php echo $class;?>">
+			<div class="<?php echo esc_attr($class); ?>">
 			<?php while ( have_posts() ) : the_post();
 
 				get_template_part( 'template-parts/content', 'page' );

@@ -39,14 +39,14 @@ class engager_Customize_Dropdown_Taxonomies_Control extends WP_Customize_Control
     ?>
     <label>
       <span class="customize-control-title"><?php echo esc_html( $this->label ); ?></span>
-         <select <?php echo esc_url($this->link()); ?>>
+         <select <?php echo esc_url($this->link()); die(); ?>>
             <?php
-              printf('<option value="%s" %s>%s</option>', '', selected($this->value(), '', false),__('Select', 'engager') );
+              printf(esc_html('<option value="%s" %s>%s</option>', '', selected(esc_attr($this->value()), '', false),__('Select', 'engager') ));
              ?>
             <?php if ( ! empty( $all_taxonomies ) ): ?>
               <?php foreach ( $all_taxonomies as $key => $tax ): ?>
                 <?php
-                  printf('<option value="%s" %s>%s</option>', $tax->term_id, selected($this->value(), $tax->term_id, false), $tax->name );
+                  printf(esc_html('<option value="%s" %s>%s</option>', esc_attr($tax->term_id), selected(esc_attr($this->value()), esc_attr($tax->term_id), false), esc_attr($tax->name) ));
                  ?>
               <?php endforeach ?>
            <?php endif ?>

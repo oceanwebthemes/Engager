@@ -185,7 +185,7 @@
     $wp_customize->add_setting('icon_featured',array(
         'capability'        => 'edit_theme_options',
         'sanitize_callback' => 'engager_sanitize_text',
-        'default' =>__('','engager'),
+        'default' =>'',
     ));
     
     $wp_customize->add_control('icon_featured',array(

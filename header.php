@@ -70,7 +70,7 @@
 								'post_status'	=>'publish',	
 								'show_date'		=>'',
 								'sort_coloum'	=>'menu_order',
-								'title_li'		=>__( '', 'engager'),
+								'title_li'		=>'',
 								'walker'		=> new Engager_Walker_Page
 							);
 							wp_list_pages( $args );

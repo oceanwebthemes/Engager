@@ -15,7 +15,7 @@
 <div class="block">
 	<?php if ( have_comments() ) : ?>
   <h2 class="block-title"> <?php
-				printf( _n( '1 Comment', '%1$s Comments', get_comments_number(), 'engager' ),
+				printf( esc_attr(_n( '%s Comment', '%s Comments', get_comments_number(), 'engager' )),
 					number_format_i18n( get_comments_number() ), '<span>' . esc_attr(get_the_title()) . '</span>' );
 			?></h2>
 
@@ -26,7 +26,7 @@
 
 		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // are there comments to navigate through ?>
 		<nav id="comment-nav-below" class="navigation" role="navigation">
-			<h1 class="assistive-text section-heading"><?php _e( 'Comment navigation', 'engager' ); ?></h1>
+			<h1 class="assistive-text section-heading"><?php  esc_attr_e( 'Comment navigation', 'engager' ); ?></h1>
 			<div class="nav-previous"><?php previous_comments_link( __( '&larr; Older Comments', 'engager' ) ); ?></div>
 			<div class="nav-next"><?php next_comments_link( __( 'Newer Comments &rarr;', 'engager' ) ); ?></div>
 		</nav>
@@ -37,7 +37,7 @@
 		 * But we only want the note on posts and pages that had comments in the first place.
 		 */
 		if ( ! comments_open() && get_comments_number() ) : ?>
-		<p class="nocomments"><?php _e( 'Comments are closed.' , 'engager' ); ?></p>
+		<p class="nocomments"><?php  esc_attr_e( 'Comments are closed.' , 'engager' ); ?></p>
 		<?php endif; ?>
 
 	<?php endif; // have_comments() ?>

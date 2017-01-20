@@ -104,7 +104,7 @@
     $wp_customize->add_setting('slider_read_more',array(
         'sanitize_callback' => 'engager_sanitize_text',
         'capability' => 'edit_theme_options',
-        'default' => __('','engager')
+        'default' => ''
     ));
     
     $wp_customize->add_control('slider_read_more',array(

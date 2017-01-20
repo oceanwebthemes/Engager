@@ -35,7 +35,7 @@ get_header(); ?>
 						}
 					?>
 
-					<div class="<?php echo $class;?>">
+					<div class="<?php echo esc_attr($class); ?>">
 						<?php
 						if ( have_posts() ) : 
 							/* Start the Loop */

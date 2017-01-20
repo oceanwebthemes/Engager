@@ -32,7 +32,7 @@ get_header(); ?>
 						get_sidebar('left');
 					}
 				?>
-				<div class="<?php echo $class;?>">
+				<div class="<?php echo esc_attr($class);?>">
 					<div class="not-found">
 						<h1><?php esc_html_e( '404 Page not Found', 'engager' ); ?></h1>
 						<h3><?php esc_html_e( 'OOPS, This page could not be found!', 'engager' ); ?></h3>

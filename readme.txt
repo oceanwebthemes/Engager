@@ -10,7 +10,7 @@ Tags: translation-ready,theme-options, custom-menu, threaded-comments,one-column
 
 Requires at least: 4.5.2
 Tested up to: 4.6.2
-Stable tag: 1.0.8
+Stable tag: 1.0.9
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Engager WordPress Theme, Copyright 2016 oceanwebthemes

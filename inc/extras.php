@@ -168,7 +168,7 @@ function engager_comment( $comment, $args, $depth ) {
     // Display trackbacks differently than normal comments.
   ?>
   <li <?php comment_class(); ?> id="comment-<?php comment_ID(); ?>">
-    <p><?php _e( 'Pingback:', 'engager' ); ?> <?php comment_author_link(); ?> <?php edit_comment_link( __( '(Edit)', 'engager' ), '<span class="edit-link">', '</span>' ); ?></p>
+    <p><?php esc_attr_e( 'Pingback:', 'engager' ); ?> <?php comment_author_link(); ?> <?php edit_comment_link( __( '(Edit)', 'engager' ), '<span class="edit-link">', '</span>' ); ?></p>
   <?php
       break;
     default :
@@ -183,20 +183,20 @@ function engager_comment( $comment, $args, $depth ) {
           printf( ' <b class="fn">%1$s</b> %2$s',
             get_comment_author_link(),
             // If current post author is also comment author, make it known visually.
-            ( $comment->user_id === $post->post_author ) ? '<span>' . __( '', 'engager' ) . '</span>' : ''
+            esc_html(( $comment->user_id === $post->post_author ) ? '<span>' . '' . '</span>' : '')
           );
                     
           printf( '<time datetime="%2$s">%3$s</time>',
             esc_url( get_comment_link( $comment->comment_ID ) ),
             get_comment_time( 'c' ),
             /* translators: 1: date, 2: time */
-            sprintf( __( '%1$s at %2$s', 'engager' ), get_comment_date(), get_comment_time() )
+            sprintf( esc_attr(__( '%1$s at %2$s', 'engager' )), get_comment_date(), get_comment_time() )
           );
         ?>
       </header><!-- .comment-meta -->
 
       <?php if ( '0' == $comment->comment_approved ) : ?>
-        <p class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.', 'engager' ); ?></p>
+        <p class="comment-awaiting-moderation"><?php esc_attr_e( 'Your comment is awaiting moderation.', 'engager' ); ?></p>
       <?php endif; ?>
 
       <section class="comment-content comment">

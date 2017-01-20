@@ -2,6 +2,12 @@ Changelog
 
 Tested up to: 4.6.2
 
+version 1.0.9 
+i) 		Fixation on escaping, Translation to Empty Strings.
+ii)     Removed deprecated constants.
+iii)    Fixation regarding internationalization.
+
+
 version 1.0.8 
 i) 		Spelling Error Fixed
 ii)		Screenshot Changed
